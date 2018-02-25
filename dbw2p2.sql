@@ -34,5 +34,5 @@ CONSTRAINT fk_class FOREIGN KEY (class_id) REFERENCES class (id) ON DELETE CASCA
 CREATE INDEX idx_student_name ON student (name);
 DESCRIBE student;
 
-ALTER TABLE class ADD `status` ENUM('Low', 'Medium', 'High') NOT NULL;
+ALTER TABLE class ADD `status` ENUM('Not-started', 'Ongoing', 'Finished') NOT NULL;
 DESCRIBE class;
